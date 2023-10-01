@@ -1,0 +1,8 @@
+import java.util.Locale;
+import java.util.ResourceBundle;
+Locale locale = new Locale("en"); 
+ResourceBundle bundle = ResourceBundle.getBundle("messages", locale);
+String welcomeMessage = bundle.getString("welcome.message");
+String invalidCredentialsMessage = bundle.getString("invalid.credentials.message");
+System.out.println(welcomeMessage);
+System.out.println(invalidCredentialsMessage);
